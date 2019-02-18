@@ -1,0 +1,27 @@
+
+
+.face {
+  background: lightskyblue;
+  height: 400px;
+  width: 400px; 
+  position: static;   
+}
+
+.second {
+  position: absolute;
+  
+  width: 400px;
+  height: 400px;
+  left: 5px;
+  top: 5px;
+}
+
+.minute {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 5px;
+  top: 5px;
+  
+  
+}

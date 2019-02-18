@@ -5,18 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DOM Clock</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <div class="digi_clock">
-        <!--./ clock goes in here! -->
-    </div>
+       
+        
+  
 
-    <div class="analogue_clock">
-        <!--./ clock goes in here! -->
+    <div class="analogue_clock"  id="div" r>
+         <img src="img/clock_face.jpg" CLASS="face" cx="300" cy="300" r="253.9"/>
+        <img id="second" src="img/second_hand.png" class="second" cx="300" cy="300" r="253.9"/>
+        <img id="minute" src="img/minute_hand.png" class="minute" cx="300" cy="300" r="253.9" />
+        <img id="hour" src="img/hour_hand.png" class="minute" cx="300" cy="300" r="253.9" />
     </div>
+    <!-- <div id="txt" ></div>
+    <div id="txt2" ></div> -->
 
+    
+ 
+
+    
     <div class="tbl_holder">
-        <!--./ clock goes in here! -->
+            
     </div>
+ 
+    <button>Toggle</button>
+<p id="txt">12hrs format</p>
+<p id="txt2" style="display: none">24hours format</p>
+ 
+<script>
+$( "button" ).click(function() {
+  $( "p" ).toggle();
+});
+</script>
 </body>
+<script src="js/main.js"></script>
+
 </html>
